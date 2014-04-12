@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kasim.ir - the artist</title>
+    <meta name="author" content="Karsten Janke"/>
+    <meta name="keywords" content="Kunst, art, malerei, watercolor, wasserfarben, watercolour, plastiken, grafiken"/>
+    <meta name="description" content="Die offizielle Seite des Künstlers Kasim.ir"/>
+    <link rel="icon" type="image/png" href="favicon.png"/>
+
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <script src="{{ STATIC_URL }}js/jquery/dist/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}js/fotorama/fotorama.js"></script>
+    <script src="{{ STATIC_URL }}js/script.js"></script>
+
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/fotorama/fotorama.css" type="text/css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css">
+</head>
+<body>
+
+<div id="categories">
+    <a href="#" class="category" id="all">all</a>
+    <a href="#" class="category" id="watercolor">watercolor</a>
+    <a href="#" class="category" id="paintings">paintings</a>
+    <a href="#" class="category" id="sketch">sketch</a>
+    <a href="#" class="category" id="sculpture">sculpture</a>
+</div>
+
+<div id="nav">
+    <div id="kasimir"></div>
+    <ul>
+        <a href="#">
+        <li><b>ALL WORK</b><br>
+        ALLE ARBEITEN
+        </a>
+    </ul>
+ 
+    <ul>
+        <a href="#">
+        <li><b>BY CATEGORIES</b><br>
+        NACH KATEGORIEN
+        </a>
+    </ul>
+ 
+    <ul>
+        <a href="#">
+        <li><b>CONTACT & BUY</b><br>
+        KONTAKT & KAUF
+        </a>
+    </ul>
+ 
+    <ul>
+        <a href="#">
+        <li><b>BLOG</b><br>
+        BABUH!
+        </a>
+    </ul>
+ 
+    <ul>
+        <a href="#">
+        <li><b>ABOUT ME</b><br>
+        ÜBER MICH
+        </a>
+    </ul>
+</div>
+
+{% block content %}{% endblock %}
+
+</body>
+</html>

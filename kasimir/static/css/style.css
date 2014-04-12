@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    background-color: #2e2e2e;
+}
+
+#images {
+    display: none;
+}
+ 
+#nav {
+    margin: 0;
+    height: 70px;
+    font-family: sans-serif;
+    font-size: 10pt;
+    letter-spacing: 0.1em;
+    color: #f5f5f5;
+    background-color: #2e2e2e;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+}
+ 
+#nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+ 
+#nav:hover a {
+    color: #2e2e2e;
+}
+
+#nav a:hover {
+    color: #ea6900;
+    transition: color 0.15s ease-in-out;
+   -moz-transition: color 0.15s ease-in-out;
+   -webkit-transition: color 0.15s ease-in-out;
+}
+ 
+#kasimir {
+    background-image: url(kasimir_white.png);
+    background-repeat: no-repeat;
+    float: left;
+    width: 249px;
+    height: 100%;
+}
+ 
+#nav:hover {
+    background-color: #f5f5f5;
+    color: #171717;
+    transition: background-color 0.25s ease-in-out;
+   -moz-transition: background-color 0.25s ease-in-out;
+   -webkit-transition: background-color 0.25s ease-in-out;
+}
+#nav:hover #kasimir {
+    background-image: url(kasimir.png);
+}
+ 
+ul {
+    margin: 0;
+    padding: 20px 5% 20px 20px;
+    list-style-type: none;
+    display: inline-block
+}
+img {
+    float: left;
+}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div id="images">
+    <img src="{{ STATIC_URL }}img/WasserEisGlas_final.png" id="IKEAGlasBlender3D" data-category="3D">
+    <img src="{{ STATIC_URL }}img/IMG_3371.jpg" id="Meerluft" data-category="photography">
+    <img src="{{ STATIC_URL }}img/fliege.JPG" id="fliege" data-category="sketch">
+    <img src="{{ STATIC_URL }}img/sun.jpg" id="sun" data-category="paintings">
+    <img src="{{ STATIC_URL }}img/meerluft.jpg" data-category="watercolor, paintings">
+    <img src="{{ STATIC_URL }}img/flaschenpost.png" data-category="sculpture">
+    <img src="{{ STATIC_URL }}img/w1r3.png" data-category="graphics">
+</div>
+<div id="slideshow"></div>
+
+{% endblock %}

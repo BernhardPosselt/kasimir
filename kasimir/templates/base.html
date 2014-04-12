@@ -5,7 +5,7 @@
     <meta name="author" content="Karsten Janke"/>
     <meta name="keywords" content="Kunst, art, malerei, watercolor, wasserfarben, watercolour, plastiken, grafiken"/>
     <meta name="description" content="Die offizielle Seite des Künstlers Kasim.ir"/>
-    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="icon" type="image/png" href="{{ STATIC_URL }}img/favicon.png"/>
 
     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
     <script src="{{ STATIC_URL }}js/jquery/dist/jquery.min.js"></script>
@@ -17,18 +17,17 @@
 </head>
 <body>
 
-<!--
 <div id="nav">
     <div id="kasimir"></div>
     <ul>
-        <a href="#">
+        <a href="/">
         <li><b>ALL WORK</b><br>
         ALLE ARBEITEN
         </a>
     </ul>
  
     <ul>
-        <a href="#">
+        <a href="/categories">
         <li><b>BY CATEGORIES</b><br>
         NACH KATEGORIEN
         </a>
@@ -37,7 +36,7 @@
     <ul>
         <a href="#">
         <li><b>CONTACT & BUY</b><br>
-        KONTAKT & KAUF
+        KONTAKT &amp; KAUF
         </a>
     </ul>
  
@@ -55,9 +54,10 @@
         </a>
     </ul>
 </div>
--->
 
+<div id="content">
 {% block content %}{% endblock %}
+</div>
 
 </body>
 </html>

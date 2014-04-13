@@ -37,11 +37,12 @@ body, html {
 }
  
 #kasimir {
-    background-image: url(kasimir_white.png);
-    background-repeat: no-repeat;
     float: left;
     width: 249px;
     height: 100%;
+}
+#nav:hover #kasimir img:nth-child(1) {
+    display: none;
 }
  
 #nav:hover {
@@ -51,8 +52,12 @@ body, html {
    -moz-transition: background-color 0.25s ease-in-out;
    -webkit-transition: background-color 0.25s ease-in-out;
 }
-#nav:hover #kasimir {
-    background-image: url(kasimir.png);
+
+#nav #kasimir img:nth-child(2) {
+    display: none;
+}
+#nav:hover #kasimir img:nth-child(2) {
+    display: block;
 }
  
 #nav ul {
